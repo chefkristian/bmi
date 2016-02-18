@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dedede">
+
+
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/scale"
+            android:layout_marginLeft="10dp"
+
+            />
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:text="Body Weight"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tvBerat"
+            android:background="#dedede"
+
+            android:gravity="center" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:hint="Body Weight"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/etBerat"
+            android:inputType="numberDecimal"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/height"/>
+
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:background="#dedede"
+            android:text="Body Height"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tvTinggi"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:hint="Body Height"
+            android:inputType="numberDecimal"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/etTinggi"
+            android:gravity="center" />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Calculate"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/button2"
+        android:background="@drawable/state_button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="48dp"
+        android:textColor="#ffffff"/>
+
+
+</LinearLayout>
