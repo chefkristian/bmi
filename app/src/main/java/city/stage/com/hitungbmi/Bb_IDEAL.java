@@ -1,5 +1,6 @@
 package city.stage.com.hitungbmi;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.v7.app.ActionBarActivity;
@@ -9,7 +10,7 @@ import android.widget.TextView;
 /**
  * Created by indomegabyte on 17/02/16.
  */
-public class Bb_IDEAL extends ActionBarActivity{
+public class Bb_IDEAL extends Activity{
     TextView tvbb_ideal,tvbb_ideal2;
     double tinggi;
    // TextView saran;

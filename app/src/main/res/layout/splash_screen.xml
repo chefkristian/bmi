@@ -7,11 +7,11 @@
 
 
     <ImageView
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:src="@drawable/bmi"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:src="@drawable/bbi"
         android:layout_gravity="center"
-android:layout_marginTop="80dp"
+android:layout_marginTop="10dp"
         android:id="@+id/slashscreen"/>
 
 </LinearLayout>

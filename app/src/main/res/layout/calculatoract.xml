@@ -3,43 +3,48 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#dedede">
+    android:background="@drawable/bg_main"
+android:paddingTop="100dp"
+    >
 
 
     <LinearLayout
-        android:layout_marginTop="80dp"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:orientation="horizontal"
+        android:layout_gravity="center"
         >
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/scale"
-            android:layout_marginLeft="10dp"
+            android:src="@drawable/scalewhite"
+
 
             />
 
-        <TextView
-            android:layout_width="130dp"
-            android:layout_height="50dp"
-            android:text="Body Weight"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/tvBerat"
-            android:background="#dedede"
+        <!--<TextView-->
+            <!--android:layout_width="130dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:text="Body Weight"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+            <!--android:id="@+id/tvBerat"-->
+            <!--android:background="#dedede"-->
 
-            android:gravity="center" />
+            <!--android:gravity="center" />-->
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:hint="Body Weight"
             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textColorHint="#FFFFFF"
             android:id="@+id/etBerat"
             android:inputType="numberDecimal"
-            android:gravity="center" />
+             />
 
     </LinearLayout>
 
@@ -48,46 +53,53 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_gravity="center">
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/height"/>
+
+            android:src="@drawable/heightwhite"/>
 
 
-        <TextView
-            android:layout_width="130dp"
-            android:layout_height="50dp"
-            android:background="#dedede"
-            android:text="Body Height"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/tvTinggi"
-            android:gravity="center" />
+        <!--<TextView-->
+            <!--android:layout_width="130dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="#dedede"-->
+            <!--android:text="Body Height"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+            <!--android:id="@+id/tvTinggi"-->
+            <!--android:gravity="center" />-->
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:hint="Body Height"
             android:inputType="numberDecimal"
+            android:textColor="#ffffff"
+            android:textColorHint="#FFFFFF"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:id="@+id/etTinggi"
-            android:gravity="center" />
+             />
     </LinearLayout>
 
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
         android:text="Calculate"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+
         android:id="@+id/button2"
-        android:background="@drawable/state_button"
+        android:background="#ffffff"
+        android:textColor="#2394c6"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="48dp"
-        android:textColor="#ffffff"/>
+        android:layout_marginTop="20dp"
+        />
 
 
 </LinearLayout>

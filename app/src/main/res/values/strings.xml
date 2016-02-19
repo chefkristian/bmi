@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hitung BMI</string>
+    <string name="app_name">Berat Badan Ideal</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>

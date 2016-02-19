@@ -1,5 +1,6 @@
 package city.stage.com.hitungbmi;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -12,7 +13,7 @@ import android.widget.Toast;
 /**
  * Created by indomegabyte on 15/02/16.
  */
-public class Calculator extends ActionBarActivity implements View.OnClickListener {
+public class Calculator extends Activity implements View.OnClickListener {
     Button button2;
     TextView tvBerat;
     EditText etBerat;
