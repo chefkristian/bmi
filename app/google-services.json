@@ -1,0 +1,45 @@
+{
+  "project_info": {
+    "project_id": "berat-badan-ideal",
+    "project_number": "215113221502",
+    "name": "Berat Badan Ideal"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215113221502:android:b7d635e7a08bc77b",
+        "client_id": "android:city.stage.com.hitungbmi",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "city.stage.com.hitungbmi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-73991049-1"
+          }
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

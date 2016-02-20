@@ -31,6 +31,7 @@ public class Calculator extends Activity implements View.OnClickListener {
         etBerat= (EditText)findViewById(R.id.etBerat);
 
         button2 = (Button)findViewById(R.id.button2);
+
         button2.setOnClickListener(this);
             }
 

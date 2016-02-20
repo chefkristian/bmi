@@ -7,6 +7,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,10 +17,14 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
+
 
 public class MainActivity extends Activity implements View.OnClickListener {
     Button button;
     TextView hitung;
+private Tracker mTracker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +34,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
 //        hitung = (TextView) findViewById(R.id.hitung);
         button.setText("START");
         button.setOnClickListener(this);
+        // Obtain the shared Tracker instance.
+        AnalyticsApplication application = (AnalyticsApplication) getApplication();
+        mTracker = application.getDefaultTracker();
 //        hitung.setOnClickListener(this);
 
 //        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#93E9FA"));
@@ -75,4 +83,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        String name = "activity pertama";
+        Log.i("TEST", "Setting screen name: " + name);
+        mTracker.setScreenName("Image~" + name);
+        mTracker.send(new HitBuilders.ScreenViewBuilder().build());
+    }
+
+
 }
